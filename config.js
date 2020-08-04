@@ -30,7 +30,7 @@ const config = {
             ]
         },
         {
-            type: "Département",
+            type: "dropdown",
             title: "Departement: ",
             columnHeader: "Departement",
             listItems: [
