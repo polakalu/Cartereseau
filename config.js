@@ -2,7 +2,7 @@
 const config = {
     style: "mapbox://styles/paolati/ckcdrbphi08jd1jo47fh3b6n9",
     accessToken: "pk.eyJ1IjoicGFvbGF0aSIsImEiOiJja2QxZHc1YXkwYmVxMnpud2JhbThoYmVhIn0.rTRvxjSc-D398zOrFRYILw",
-    CSV: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGZfZ2aFpUVfe-8TVUtetYftJlqFyTTPxI57nehPfMA_bErv_8Oe6DC9RVs9TkoEjkhvqfhJlQD8m_/pub?output=csv",
+    CSV: "https://docs.google.com/spreadsheets/d/e/2PACX-1vTLi78TPoofgHiwvFWJd-Mck0dAGh2GSaNTP_U_vjNebN6-g1SGZhMzmxnjL0sQf4Hh6bafUGmTrRVl/pub?output=csv",
     center: [4.8406743, 45.7531474], //Lng, Lat
     zoom: 6, //Default zoom
     title: "Réseau Traces",
