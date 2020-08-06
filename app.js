@@ -484,5 +484,5 @@ title.innerText = config.title;
 const description = document.getElementById("description");
 description.innerText = config.description;
 
-var nav = new mapboxgl.NavigationControl(options.showZoom);
+var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'top-right');
