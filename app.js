@@ -485,4 +485,4 @@ const description = document.getElementById("description");
 description.innerText = config.description;
 
 var nav = new mapboxgl.NavigationControl();
-map.addControl(nav, 'top-right');
+map.addControl(nav, 'right');
