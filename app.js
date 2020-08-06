@@ -392,8 +392,7 @@ geocoder.on("result", function (ev) {
 });
 
 map.on("load", function () {
-    map.addControl(geocoder, "top-right");
-    map.addControl(nav, 'top-right');
+    map.addControl(geocoder, "top-left");
 
     // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
     console.log("loaded");
@@ -414,6 +413,7 @@ map.on("load", function () {
         });
     });
 
+map.addControl(nav, 'top-right');
     function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
             latfield: "Latitude",
