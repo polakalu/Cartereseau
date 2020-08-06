@@ -393,7 +393,7 @@ geocoder.on("result", function (ev) {
 
 map.on("load", function () {
     map.addControl(geocoder, "top-right");
-
+    map.addControl(nav, 'top-right');
 
     // csv2geojson - following the Sheet Mapper tutorial https://www.mapbox.com/impact-tools/sheet-mapper
     console.log("loaded");
@@ -483,6 +483,3 @@ const title = document.getElementById("title");
 title.innerText = config.title;
 const description = document.getElementById("description");
 description.innerText = config.description;
-
-var nav = new mapboxgl.NavigationControl();
-map.addControl(nav, 'right');
