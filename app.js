@@ -412,8 +412,10 @@ map.on("load", function () {
             }
         });
     });
+    // Navigation :zoom in and out
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'top-right');
 
-map.addControl(nav, 'top-right');
     function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
             latfield: "Latitude",
