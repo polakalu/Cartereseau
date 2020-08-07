@@ -27,7 +27,7 @@ function createPopup(currentFeature) {
     if (popups[0]) popups[0].remove();
     const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>")
+        .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>","<h4>" + currentFeature.properties[config.popupInfo] + "</h4>")
         .addTo(map);
 }
 
@@ -412,14 +412,11 @@ map.on("load", function () {
             }
         });
     });
-    // Navigation :zoom in and out
-    var nav = new mapboxgl.NavigationControl();
-    map.addControl(nav, 'top-right');
 
     function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
-            latfield: "Latitude",
-            lonfield: "Longitude",
+            latfield: "lat",
+            lonfield: "long",
             delimiter: ","
         }, function (err, data) {
             data.features.forEach(function (data, i) {
@@ -485,3 +482,7 @@ const title = document.getElementById("title");
 title.innerText = config.title;
 const description = document.getElementById("description");
 description.innerText = config.description;
+
+// Navigation :zoom in and out
+var nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'top-right');
