@@ -1,4 +1,4 @@
-#SidebarA{
+#sidebarA{
     color: white;
 }
 
@@ -89,5 +89,10 @@
     font-weight: 500;
     margin: 0;
     display: block;
-
+  }
+  .mapboxgl-popup-content h4 {
+      color:black;
+      font-weight: 500;
+      margin: 0;
+      display: block;
   }
