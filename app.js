@@ -1,5 +1,5 @@
 mapboxgl.accessToken = config.accessToken;
-const columnHeaders = config.sideBarInfo;
+const columnHeaders = config.TopBarInfo;
 
 let geojsonData = {};
 const filteredGeojson = {
