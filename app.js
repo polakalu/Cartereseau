@@ -415,8 +415,8 @@ map.on("load", function () {
 
     function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
-            latfield: "Latitude",
-            lonfield: "Longitude",
+            latfield: "latitude",
+            lonfield: "longitude",
             delimiter: ","
         }, function (err, data) {
             data.features.forEach(function (data, i) {
