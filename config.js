@@ -26,13 +26,12 @@ const config = {
                 'Centre Social/MJC/Regie',
                 'Compagnie',
                 'Collectivité Territoriale',
-                'Projection',
             ]
         },
         {
             type: "dropdown",
             title: "Departement: ",
-            columnHeader: "Departement",
+            columnHeader: "Département",
             listItems: [
                 'Ain',
                 'Ardeche',
