@@ -5,7 +5,7 @@ const config = {
     CSV: "./vingtans.csv",
     center: [4.8406743, 45.7531474], //Lng, Lat
     zoom: 6, //Default zoom
-    title: "Biennale Traces",
+    title: "Réseau Traces",
     description: "Le réseau TRACES, Histoire, mémoires et actualités des migrations s’est créé à la fin des années 1990. Il regroupe une très grande diversité d’acteurs, qui tous ont en commun de travailler les questions qui entourent les migrations d’hier et d’aujourd’hui en région Auvergne-Rhône-Alpes : chercheurs, artistes, médias, associations socio-culturelles, lieux de diffusion, collectivités territoriales, institutions, collectifs d’habitants, etc.",
     sideBarInfo: ["Nom de la Structure","Thématique de travail","Site internet","Horaire","Thematique","Description"],
     popupInfo: ["Nom de la Structure"],
@@ -14,7 +14,7 @@ const config = {
             type: "checkbox",
             title: "Thematique : ",
             columnHeader: "Thématique de travail",
-            listItems: ["Travail","Habitat", "Expression artistique des personnes migrantes","Autre"]
+            listItems: ["Solidarités","Education et Education populaire", "Champ Culturel Arts","Patrimoine & Mémoire","Recherche","Médias et Information"]
         },
         {
             type: "dropdown",
@@ -34,9 +34,9 @@ const config = {
         },
         {
             type: "checkbox",
-            title: "Type de soirée: ",
+            title: "Type de structure: ",
             columnHeader: "Forme",
-            listItems: ["Film", "Conférence", "Théâtre","Table ronde","Concert","Exposition"]
+            listItems: ["Association", "etc"]
         }
     ]
 
