@@ -1,48 +1,42 @@
 
 const config = {
-    style: "mapbox://styles/paolati/ckcdrbphi08jd1jo47fh3b6n9",
+    style: "mapbox://styles/paolati/cke8bqy1448cg19ljsleo5877",
     accessToken: "pk.eyJ1IjoicGFvbGF0aSIsImEiOiJja2QxZHc1YXkwYmVxMnpud2JhbThoYmVhIn0.rTRvxjSc-D398zOrFRYILw",
-    CSV: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGZfZ2aFpUVfe-8TVUtetYftJlqFyTTPxI57nehPfMA_bErv_8Oe6DC9RVs9TkoEjkhvqfhJlQD8m_/pub?output=csv",
+    CSV: "./donnees.csv",
     center: [4.8406743, 45.7531474], //Lng, Lat
     zoom: 6, //Default zoom
-    title: "Réseau Traces",
-    description: "Le réseau TRACES, Histoire, mémoires et actualités des migrations s’est créé à la fin des années 1990. Il regroupe une très grande diversité d’acteurs, qui tous ont en commun de travailler les questions qui entourent les migrations d’hier et d’aujourd’hui en région Auvergne-Rhône-Alpes : chercheurs, artistes, médias, associations socio-culturelles, lieux de diffusion, collectivités territoriales, institutions, collectifs d’habitants, etc.",
-    SideBarInfo: ["Nom","Description","Contact","Site"],
-    popupInfo: ["Nom"],
+    title: "Biennale Traces",
+    description: "La Biennale Traces qui aura lieu du 7 octobre au 7 décembre 2020, regroupe une centaine de propositions (conférences, tables rondes, expositions, journées d'études, projections de films, concerts, spectacles). Ces temps, sont portées par une grande diversité d’acteurs, qui tous ont en commun de travailler les questions qui entourent les migrations d’hier et d’aujourd’hui en région Auvergne-Rhône-Alpes : chercheur.euses, artistes, médias, collectifs et associations, lieux et institutions, collectivités territoriales, etc.. ",
+    sideBarInfo: ["Soiree","Forme","Date","Horaire","Thematique","Description"],
+    popupInfo: ["Soiree"],
     filters: [
         {
             type: "checkbox",
-            title: "Thématique de travail: ",
-              columnHeader: "Cat1",
-            listItems: ["Solidarités", "Education", "Artistes", "Equipements culturels","Patrimoine & Mémoire", "Médias", "Recherche"]
-        },
-        {
-            type: "Organisation_structurelle",
-            title: "Type de Structure : ",
-            columnHeader: "Forme",
-            listItems: [
-                'Association',
-                'Collectif',
-                'Centre Social/MJC/Regie',
-                'Compagnie',
-                'Collectivité Territoriale',
-            ]
+            title: "Thematique : ",
+            columnHeader: "Thematique",
+            listItems: ["Travail","Habitat", "Expression artistique des personnes migrantes","Autre"]
         },
         {
             type: "dropdown",
-            title: "Departement: ",
+            title: "Département: ",
             columnHeader: "Département",
             listItems: [
-                'Ain',
-                'Ardeche',
+              'Ain',
+                'Ardèche',
                 'Auvergne',
-                'Drome',
-                'Isere',
-                'Haute Savoie',
+                'Drôme',
+                'Isère',
+                'Haute-Savoie',
                 'Loire',
-                'Rhone',
+                'Rhône',
                 'Savoie'
             ]
+        },
+        {
+            type: "checkbox",
+            title: "Type de soirée: ",
+            columnHeader: "Forme",
+            listItems: ["Film", "Conférence", "Théâtre","Table ronde","Concert","Exposition"]
         }
     ]
 

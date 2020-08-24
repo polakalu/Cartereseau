@@ -1,5 +1,5 @@
 mapboxgl.accessToken = config.accessToken;
-const columnHeaders = config.sidebarBarInfo;
+const columnHeaders = config.sideBarInfo;
 
 let geojsonData = {};
 const filteredGeojson = {
@@ -27,7 +27,7 @@ function createPopup(currentFeature) {
     if (popups[0]) popups[0].remove();
     const popup = new mapboxgl.Popup({ closeOnClick: true })
         .setLngLat(currentFeature.geometry.coordinates)
-        .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>","<h4>" + currentFeature.properties[config.popupInfo] + "</h4>")
+        .setHTML("<h3>" + currentFeature.properties[config.popupInfo] + "</h3>")
         .addTo(map);
 }
 
@@ -313,6 +313,7 @@ function removeFilters() {
     let select = document.getElementsByTagName('select');
     let selectOption = [].slice.call(select);
     let checkboxOption = [].slice.call(input);
+    filteredGeojson.features = [];
 
     checkboxOption.forEach(function (checkbox) {
         if (checkbox.type == 'checkbox' && checkbox.checked == true) {
@@ -354,10 +355,15 @@ const geocoder = new MapboxGeocoder({
     zoom: 11
 });
 
-
 function sortByDistance(selectedPoint) {
     const options = { units: "miles" };
-    geojsonData.features.forEach(function (data) {
+    if (filteredGeojson.features.length > 0) {
+        var data = filteredGeojson
+    }
+    else {
+        var data = geojsonData
+    }
+    data.features.forEach(function (data) {
         Object.defineProperty(data.properties, "distance", {
             value: turf.distance(selectedPoint, data.geometry, options),
             writable: true,
@@ -368,7 +374,7 @@ function sortByDistance(selectedPoint) {
 
     });
 
-    geojsonData.features.sort(function (a, b) {
+    data.features.sort(function (a, b) {
         if (a.properties.distance > b.properties.distance) {
             return 1;
         }
@@ -381,7 +387,7 @@ function sortByDistance(selectedPoint) {
     while (listings.firstChild) {
         listings.removeChild(listings.firstChild);
     }
-    buildLocationList(geojsonData);
+    buildLocationList(data);
 }
 
 geocoder.on("result", function (ev) {
@@ -415,8 +421,8 @@ map.on("load", function () {
 
     function makeGeoJSON(csvData) {
         csv2geojson.csv2geojson(csvData, {
-            latfield: "latitude",
-            lonfield: "longitude",
+            latfield: "Latitude",
+            lonfield: "Longitude",
             delimiter: ","
         }, function (err, data) {
             data.features.forEach(function (data, i) {
@@ -434,7 +440,7 @@ map.on("load", function () {
                 },
                 "paint": {
                     "circle-radius": 5, // size of circles
-                    "circle-color": "#f45453", // color of circles
+                    "circle-color": "#3D2E5D", // color of circles
                     "circle-stroke-color": "white",
                     "circle-stroke-width": 1,
                     "circle-opacity": 0.7
@@ -482,6 +488,7 @@ const title = document.getElementById("title");
 title.innerText = config.title;
 const description = document.getElementById("description");
 description.innerText = config.description;
+
 
 // Navigation :zoom in and out
 var nav = new mapboxgl.NavigationControl();
