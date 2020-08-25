@@ -10,6 +10,7 @@ const config = {
     sideBarInfo: ["Nom de la Structure","Thématique de travail","Site internet"],
     popupNom: ["Nom de la Structure"],
     popupDescrip:["Thématique de travail"],
+    popupWeb:["Site internet"],
     filters: [
         {
             type: "checkbox",
