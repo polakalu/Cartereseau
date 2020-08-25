@@ -90,7 +90,7 @@
     margin: 0;
     display: block;
   }
-  .mapboxgl-popup-content h4 {
+.mapboxgl-popup-content h4 {
     margin: 0;
     display: block;
     padding: 10px 3px 10px 10px;
