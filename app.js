@@ -445,7 +445,7 @@ map.on("load", function () {
                     "circle-radius": 5, // size of circles
                     "circle-color": "transparent", // color of circles
                     "circle-stroke-color": "transparent",
-                    "circle-stroke-width": 1,
+                    "circle-stroke-width": 0,
                     "circle-opacity": 0.5
                 }
 
