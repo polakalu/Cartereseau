@@ -446,7 +446,7 @@ map.on("load", function () {
                     "circle-color": "#DAA520", // color of circles
                     "circle-stroke-color": "white",
                     "circle-stroke-width": 1,
-                    "circle-opacity": 0.7
+                    "circle-opacity": 0.5
                 }
 
             });
