@@ -4,7 +4,7 @@ const config = {
     accessToken: "pk.eyJ1IjoicGFvbGF0aSIsImEiOiJja2QxZHc1YXkwYmVxMnpud2JhbThoYmVhIn0.rTRvxjSc-D398zOrFRYILw",
     CSV: "./TEST2.csv",
     center: [4.8406743, 45.7531474], //Lng, Lat
-    zoom: 7, //Default zoom
+    zoom: 6, //Default zoom
     title: "Réseau Traces",
     description: "Le réseau TRACES, Histoire, mémoires et actualités des migrations s’est créé à la fin des années 1990. Il regroupe une très grande diversité d’acteurs, qui tous ont en commun de travailler les questions qui entourent les migrations d’hier et d’aujourd’hui en région Auvergne-Rhône-Alpes : chercheurs, artistes, médias, associations socio-culturelles, lieux de diffusion, collectivités territoriales, institutions, collectifs d’habitants, etc.",
     sideBarInfo: ["Nom de la Structure","Thématique de travail"],
