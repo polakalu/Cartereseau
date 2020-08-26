@@ -443,7 +443,7 @@ map.on("load", function () {
                 },
                 "paint": {
                     "circle-radius": 5, // size of circles
-                    "circle-color": "white", // color of circles
+                    "circle-color": "transparent", // color of circles
                     "circle-stroke-color": "white",
                     "circle-stroke-width": 1,
                     "circle-opacity": 0.1
