@@ -24,7 +24,6 @@ function flyToLocation(currentFeature, zoom) {
 function createPopup(currentFeature) {
     const popups = document.getElementsByClassName("mapboxgl-popup");
     /** Text in the popup */
-    const siteweb
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`+`<h4>`+ currentFeature.properties[config.popupDescrip] + `</h4>`+ `<h4>` + `<b>` + `Plus d'informations : ` + `</b>` + currentFeature.properties[config.popupWeb] + `</h4>`;
 
     /** Check if there is already a popup on the map and if so, remove it */
