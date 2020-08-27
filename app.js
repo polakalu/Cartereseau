@@ -443,10 +443,20 @@ map.on("load", function () {
                 },
                 "paint": {
                     "circle-radius": 5, // size of circles
-                    "circle-color": "transparent", // color of circles
-                    "circle-stroke-color": "transparent",
-                    "circle-stroke-width": 0,
-                    "circle-opacity": 0.5
+                    "circle-color": [
+                                    "match",
+                                    ["get", "Implication"],
+                                    ["1"],
+                                    "#e04091",
+                                    ["2"],
+                                    "#f6b142",
+                                    ["3"],
+                                    "#52b885",
+                                    "#504da8"
+                                ],
+                    "circle-stroke-color": "white",
+                    "circle-stroke-width": 1,
+                    "circle-opacity": 0.9
                 }
 
             });
