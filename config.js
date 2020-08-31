@@ -21,7 +21,7 @@ const config = {
         {
             type: "dropdown",
             title: "Département: ",
-            columnHeader: "Département",
+            columnHeader: "Departement",
             listItems: [
               'Ain',
                 'Ardèche',
