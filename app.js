@@ -447,11 +447,11 @@ map.on("load", function () {
                                     "match",
                                     ["get", "Implication"],
                                     ["1"],
-                                    "#e04091",
+                                    "#f55742",
                                     ["2"],
                                     "#f6b142",
                                     ["3"],
-                                    "#52b885",
+                                    "#e0f542",
                                     "#504da8"
                                 ],
                     "circle-stroke-color": "white",
