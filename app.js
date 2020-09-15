@@ -454,7 +454,7 @@ map.on("load", function () {
                                     "#e0f542",
                                     "#504da8"
                                 ],
-                    "circle-stroke-color": "white",
+                    "circle-stroke-color": "grey",
                     "circle-stroke-width": 1,
                     "circle-opacity": 0.9
                 }
