@@ -456,7 +456,7 @@ map.on("load", function () {
                                 ],
                     "circle-stroke-color": "grey",
                     "circle-stroke-width": 1,
-                    "circle-opacity": 0.9
+                    "circle-opacity": 0.7
                 }
 
             });
