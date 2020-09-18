@@ -23,7 +23,7 @@ const config = {
             title: "Département: ",
             columnHeader: "Departement",
             listItems: [
-              'Ain',
+                'Ain',
                 'Ardèche',
                 'Auvergne',
                 'Drôme',

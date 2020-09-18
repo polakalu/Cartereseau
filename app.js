@@ -20,7 +20,7 @@ function flyToLocation(currentFeature, zoom) {
         zoom: zoom
     });
 }
-
+    //POPUP
 function createPopup(currentFeature) {
     const popups = document.getElementsByClassName("mapboxgl-popup");
     /** Text in the popup */
