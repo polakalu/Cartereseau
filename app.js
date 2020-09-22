@@ -26,7 +26,7 @@ function createPopup(currentFeature) {
     const webs = currentFeature.properties[config.popupWeb]
     /** site web **/
     const site = if (webs){
-      '<button class="btn"><h3><a href="'+ webs +'" target="_blank" rel="noopener noreferrer" > En savoir + </a></h3></button>';
+      ' <button class="btn"><h3><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></h3></button>';
   }
     else{"";
   }
