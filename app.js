@@ -26,8 +26,8 @@ function createPopup(currentFeature) {
     /** site web **/
     let empt = ""
     if (currentFeature.properties[config.popupWeb]){
-      empt = '<button class="btn btn--s btn--color-yellow-dark"><a href="'+ currentFeature.properties[config.popupWeb]
-      +'" target="_blank" rel="noopener noreferrer" > En savoir + </a></button>';}
+      empt = '<div class="flex-parent flex-parent--center-main"><button class="btn btn--color-yellow-dark"><a href="'+ currentFeature.properties[config.popupWeb]
+      +'" target="_blank" rel="noopener noreferrer" > En savoir + </a></button></div>';}
     const site = empt;
     /** Text in the popup */
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`
