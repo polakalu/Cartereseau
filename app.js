@@ -26,14 +26,18 @@ function createPopup(currentFeature) {
     const webs = currentFeature.properties[config.popupWeb]
     /** site web **/
     if (webs){
-      const site = ' <button class="btn"><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></button>';
+      ' <button class="btn"><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></button>';
   }
-    else{const site = "";
+    else{ "";
   }
     /** Text in the popup */
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`
                         + `<h4>`+ currentFeature.properties[config.popupDescrip] + `</h4>`
-                        + site;
+                        + if (webs){
+                          ' <button class="btn"><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></button>';
+                      }
+                        else{ "";
+                      };
     /** Check if there is already a popup on the map and if so, remove it */
     if (popups[0]) popups[0].remove();
     const popup = new mapboxgl.Popup({ closeOnClick: true })
