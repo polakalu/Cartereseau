@@ -25,10 +25,10 @@ function createPopup(currentFeature) {
     const popups = document.getElementsByClassName("mapboxgl-popup");
     const webs = currentFeature.properties[config.popupWeb]
     /** site web **/
-    const site = if (webs){
-      ' <button class="btn"><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></button>';
+    if (webs){
+      const site = ' <button class="btn"><a href=" '+ webs +'" target="_blank" rel="noopener noreferrer"> En savoir + </a></button>';
   }
-    else{"";
+    else{const site = "";
   }
     /** Text in the popup */
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`
