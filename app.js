@@ -24,7 +24,7 @@ function flyToLocation(currentFeature, zoom) {
 function createPopup(currentFeature) {
     const popups = document.getElementsByClassName("mapboxgl-popup");
     /** site web **/
-    const site = currentFeature.properties[config.popupWeb] ? '<a href="' + currentFeature.properties[config.popupWeb]
+    const site = (currentFeature.properties[config.popupWeb]) ? '<a href="' + currentFeature.properties[config.popupWeb]
     + '" target="_blank" rel="noopener noreferrer" > En savoir + </a></h3>' : "" ;
     /** Text in the popup */
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`
