@@ -27,7 +27,7 @@ function createPopup(currentFeature) {
     const informations =`<h3>` + currentFeature.properties[config.popupNom] + `</h3>`
                         + `<h4>`+ currentFeature.properties[config.popupDescrip] + `</h4>`
                         + '<h3><a href="' + currentFeature.properties[config.popupWeb]
-                        + ' target="_blank" > En savoir + </a></h3> ';
+                        + ' target="_blank" rel="noopener noreferrer" > En savoir + </a></h3> ';
 
     /** Check if there is already a popup on the map and if so, remove it */
     if (popups[0]) popups[0].remove();
