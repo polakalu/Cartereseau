@@ -26,7 +26,7 @@ function createPopup(currentFeature) {
     /** site web **/
     let empt = ""
     if (currentFeature.properties[config.popupWeb]){
-      empt = '<div class="flex-parent flex-parent--center-main"><button class="btn btn--#dd520"><a href="'+ currentFeature.properties[config.popupWeb]
+      empt = '<div class="flex-parent flex-parent--center-main"><button class="btn btn--stroke btn--plus"><a href="'+ currentFeature.properties[config.popupWeb]
       +'" target="_blank" rel="noopener noreferrer" > En savoir + </a></button></div><br>';}
     const site = empt;
     /** Text in the popup */
