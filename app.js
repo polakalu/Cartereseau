@@ -452,10 +452,14 @@ map.on("load", function () {
                     "circle-radius": 5.3, // size of circles
                     "circle-color": [
                                     "match",
-                                    ["get", "Implication 2019-2020"],
-                                    ["2020"],
-                                    "#f55742",
-                                    "#e0f542"
+                                    ["get", "Implication"],
+                                    ["1"],
+                                    "#ff0000",
+                                    ["2"],
+                                    "#ff8c00",
+                                    ["3"],
+                                    "#ffd700",
+                                    "#66cdaa"
                                 ],
                     "circle-stroke-color": "grey",
                     "circle-stroke-width": 1,
