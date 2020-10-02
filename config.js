@@ -16,7 +16,7 @@ const config = {
             type: "checkbox",
             title: "Thematique : ",
             columnHeader: "Thématique de travail",
-            listItems: ["Solidarités","Education et Education populaire", "Champ Culturel Arts","Patrimoine & Mémoire","Recherche","Médias et Information"]
+            listItems: ["Artistes","Collectivités Territoriales","Education & Educ pop","Equipements culturels","Médias","Patrimoine & mémoire","Recherche","Solidarités"]
         },
         {
             type: "dropdown",
@@ -33,13 +33,7 @@ const config = {
                 'Rhône',
                 'Savoie'
             ]
-        },
-        {
-            type: "checkbox",
-            title: "Type de structure: ",
-            columnHeader: "Forme",
-            listItems: ["Association", "etc"]
-        }
+            }
     ]
 
 };
