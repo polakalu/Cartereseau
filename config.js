@@ -2,7 +2,7 @@
 const config = {
     style: "mapbox://styles/paolati/cke8bqy1448cg19ljsleo5877",
     accessToken: "pk.eyJ1IjoicGFvbGF0aSIsImEiOiJja2QxZHc1YXkwYmVxMnpud2JhbThoYmVhIn0.rTRvxjSc-D398zOrFRYILw",
-    CSV: "./Structures.csv",
+    CSV: "./structures.csv",
     center: [4.825780, 45.477416], //Lng, Lat
     zoom: 7, //Default zoom
     title: "Réseau Traces",
