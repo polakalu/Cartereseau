@@ -15,7 +15,7 @@ const config = {
         {
             type: "checkbox",
             title: "Thematique : ",
-            columnHeader: "Thématique de travail",
+            columnHeader: "Catégorie",
             listItems: ["Artistes","Collectivités Territoriales","Education & Educ pop","Equipements culturels","Médias","Patrimoine & mémoire","Recherche","Solidarités"]
         },
         {
