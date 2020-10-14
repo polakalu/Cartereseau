@@ -513,5 +513,3 @@ description.innerText = config.description;
 // Navigation :zoom in and out
 var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'top-right');
-
-map.legendControl.addLegend(document.getElementById('legend').innerHTML);
