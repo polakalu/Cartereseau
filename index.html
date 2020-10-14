@@ -48,8 +48,24 @@
                 </div>
             </div>
         </div>
+        <!-- Set the display of this container to none so we can
+     add it programmatically to `legendControl` -->
+<div id='legend' style='display:none;'>
+  <strong>The Title or Explanation of your Map</strong>
+  <nav class='legend clearfix'>
+    <span style='background:#F1EEF6;'></span>
+    <span style='background:#BDC9E1;'></span>
+    <span style='background:#74A9CF;'></span>
+    <span style='background:#2B8CBE;'></span>
+    <span style='background:#045A8D;'></span>
+    <label>0 - 20%</label>
+    <label>40%</label>
+    <label>60%</label>
+    <label>80%</label>
+    <label>100%</label>
+    <small>Source: <a href="#link to source">Name of source</a></small>
+</div>
         <div class='flex-child flex-child--grow w-auto viewport-full-ml viewport-twothirds' id='map'>
-
         </div>
 
         <div id='modal'
@@ -63,41 +79,13 @@
                           <button id="exitButton" class='btn flex-child mx-auto my6'>Appliquer les filtres</button>
                           <button id='removeFilters' class='btn btn--stroke flex-child mx-auto my6'>Réinitialiser</button>
                         </div>
-                        <div class='w240 round shadow-darken10 px12 py12 txt-s'>
-                          <strong class='block mb6'>Title description</strong>
-                          <div class='flex-parent flex-parent--center-main flex-parent--center-cross align-center'>
-                            <div class='flex-child flex-child--grow wmin24'>
-                              <span class='inline-block w3 h3 round-full bg-blue'></span>
-                            </div>
-                            <div class='flex-child flex-child--grow wmin24'>
-                              <span class='inline-block w6 h6 round-full bg-blue'></span>
-                            </div>
-                            <div class='flex-child flex-child--grow wmin24'>
-                              <span class='inline-block w12 h12 round-full bg-blue'></span>
-                            </div>
-                            <div class='flex-child flex-child--grow wmin24'>
-                              <span class='inline-block w18 h18 round-full bg-blue'></span>
-                            </div>
-                            <div class='flex-child flex-child--grow wmin24'>
-                              <span class='inline-block w24 h24 round-full bg-blue'></span>
-                            </div>
-                          </div>
-                          <div class='grid txt-xs align-center'>
-                            <div class='col wmin24'>3</div>
-                            <div class='col wmin24'>6</div>
-                            <div class='col wmin24'>12</div>
-                            <div class='col wmin24'>18</div>
-                            <div class='col wmin24'>24</div>
-                          </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
+    </div>
 </body>
 
 <script>
@@ -105,5 +93,4 @@
 </script>
 <script src="config.js"></script>
 <script src="app.js"></script>
-
 </html>
