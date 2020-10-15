@@ -454,9 +454,9 @@ map.on("load", function () {
                                     "match",
                                     ["get", "Implication"],
                                     ["1"],
-                                    "#ff0000",
+                                    "#dc2b28",
                                     ["2"],
-                                    "#ff8c00",
+                                    "#ff6e00",
                                     ["3"],
                                     "#f0dc00",
                                     "#66cdaa"
