@@ -2,7 +2,7 @@
 const config = {
     style: "mapbox://styles/paolati/cke8bqy1448cg19ljsleo5877",
     accessToken: "pk.eyJ1IjoicGFvbGF0aSIsImEiOiJja2QxZHc1YXkwYmVxMnpud2JhbThoYmVhIn0.rTRvxjSc-D398zOrFRYILw",
-    CSV: "./NEWSLETTER.csv",
+    CSV: "./Structures.csv",
     center: [4.825780, 45.477416], //Lng, Lat
     zoom: 7, //Default zoom
     title: "Réseau Traces",
@@ -10,13 +10,13 @@ const config = {
     sideBarInfo: ["Structure"],
     popupNom: ["Structure"],
     popupDescrip:["Description"],
-    popupWeb:["Site web"],
+    popupWeb:["Site Web"],
     filters: [
         {
             type: "checkbox",
             title: "Thematique : ",
-            columnHeader: "Thématique de travail",
-            listItems: ["Solidarités","Education et Education populaire", "Champ Culturel Arts","Patrimoine & Mémoire","Recherche","Médias et Information"]
+            columnHeader: "Catégorie",
+            listItems: ["Artistes","Collectivités Territoriales","Education & Educ pop","Equipements culturels","Médias","Patrimoine & mémoire","Recherche","Solidarités"]
         },
         {
             type: "dropdown",
@@ -33,13 +33,7 @@ const config = {
                 'Rhône',
                 'Savoie'
             ]
-        },
-        {
-            type: "checkbox",
-            title: "Type de structure: ",
-            columnHeader: "Forme",
-            listItems: ["Association", "etc"]
-        }
+            }
     ]
 
 };

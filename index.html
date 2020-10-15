@@ -34,49 +34,59 @@
                         <p id='description' class='txt-s py12 none block-ml'>
                         </p>
                         <div class="flex-parent flex-parent--center-main relative-ml absolute right top mt0-ml mt6">
+                        <div class='w240 round px12 py12 txt-s'>
+                          <div class='flex-parent flex-parent--center-main flex-parent--center-cross align-center'>
+                            <div class='flex-child flex-child--grow wmin24'>
+                              <span class='inline-block w12 h12 round-full bg-blue'></span>
+                            </div>
+                            <div class='flex-child flex-child--grow wmin24'>
+                              <span class='inline-block w12 h12 round-full bg-blue'></span>
+                            </div>
+                            <div class='flex-child flex-child--grow wmin24'>
+                              <span class='inline-block w12 h12 round-full bg-blue'></span>
+                            </div>
+                          </div>
+                          <div class='grid txt-xs align-center'>
+                            <div class='col wmin24'>Réseau</div>
+                            <div class='col wmin24'>Partenaire</div>
+                            <div class='col wmin24'>Territoire</div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="flex-parent flex-parent--center-main relative-ml absolute right top mt0-ml mt6">
                             <button id='filterResults' class='txt-bold btn btn--stroke mr0-ml mr12 px18-ml px6'>
                                 <svg class='icon inline-block align-middle h24 w24'>
                                     <use xlink:href='#icon-filter' /></svg>
                                 <p class="inline-block-ml align-middle remove none">Rechercher une structure</p>
                             </button>
                         </div>
-
-
                     </div>
                     <div id="listings" class="flex-child viewport-full py12 px12 listings scroll-auto"></div>
-
                 </div>
             </div>
         </div>
         <div class='flex-child flex-child--grow w-auto viewport-full-ml viewport-twothirds' id='map'>
-
         </div>
 
         <div id='modal'
             class='absolute top right bottom left scroll-auto hide-visually flex-parent flex-parent--center-main mt120-ml'>
             <div class='pt36'>
                 <div class='flex-child bg-white round relative scroll-auto'>
-                    <button id='exitButton' class='absolute top right px12 py12'>
-                        <svg class='icon link color-darken50'>
-                            <use xlink:href='#icon-check'></use>
-                        </svg>
-                    </button>
-                    <div class='px24 py24'>
+                  <div class='px24 py24'>
                         <form id="filters"></form>
                         <div class='align-center py12'></div>
                         <div class="flex-parent flex-parent--center-main">
                             <button id="removeFilters" class="btn">Redémarrer une recherche</button>
+
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
 
     </div>
+
 </body>
 
 <script>
@@ -84,5 +94,4 @@
 </script>
 <script src="config.js"></script>
 <script src="app.js"></script>
-
 </html>
