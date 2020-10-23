@@ -29,7 +29,7 @@ const config = {
                 'Auvergne',
                 'Drôme',
                 'Isère',
-                'Haute-Savoie',
+                'Haute-savoie',
                 'Loire',
                 'Rhône',
                 'Savoie'
